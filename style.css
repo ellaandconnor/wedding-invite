@@ -1,86 +1,72 @@
- {
+/* Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f3f3f3;
-  color: #333;
-  line-height: 1.6;
-}
-
-.beth-ellen-regular {
-  font-family: "Beth Ellen", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h1, h2 {
-  font-weight: normal;
-  font-family: "Beth Ellen", cursive;
-}
-
-section {
-  padding: 80px 20px;
+  font-family: 'Georgia', serif;
+  background-color: #fff;
   text-align: center;
+  color: #000;
 }
 
+/* Navigation */
+nav {
+  background-color: white;
+  padding: 1rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Hero section */
 .hero {
-  background-image: url('images/hero.jpg');
+  position: relative;
+  background-image: url('your-photo.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  position: relative;
-  color: black;
-}
-
-.hero .overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  inset: 0;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.hero h1 {
+.names {
+  font-family: 'Beth Ellen', cursive;
+  font-size: 2.5rem;
+  color: #b30000;
+  margin-top: 1rem;
+}
+
+.overlay-text {
+  font-family: 'Beth Ellen', cursive;
   font-size: 3rem;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
+  color: #d00000;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
 }
 
-.hero p {
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-}
-
-.section.alt {
-  background-color: #f3f3f3;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #555;
-}
-
-/* Mobile tweaks */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
+/* Invitation */
+.invitation {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding: 1rem;
 }
