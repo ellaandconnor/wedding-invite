@@ -10,7 +10,7 @@ body {
   line-height: 1.6;
 }
 
-.beth-ellen-regular { /* Moved outside the body rule */
+.beth-ellen-regular {
   font-family: "Beth Ellen", cursive;
   font-weight: 400;
   font-style: normal;
