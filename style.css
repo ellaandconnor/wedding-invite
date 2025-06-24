@@ -6,7 +6,11 @@
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  .beth-ellen-regular {
+  font-family: "Beth Ellen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
   background-color: #fff;
   color: #333;
   line-height: 1.6;
