@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css" />
-</div>
+<head>
+<title>Ella & Connor's Wedding</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
 
-<div class="overlay">
-      <h1 class="names">Ella & Connor</h1>
-<br>
- <h2 class="overlay-text">we're getting married</h2>
- <div class="image-container">
-  <img src="https://www.pstrstudio.com/cdn/shop/files/mockup_new_4_3193ec49-77d6-4b1d-91ea-189732a83660.jpg?v=1729057143&width=640" alt="Image 1">
-  <img src="https://theposterclub.com/wp-content/uploads/2024/03/Iga_Kosicka_Ping_Pong_Product_Low_Res.jpg" alt="Image 2">
-  <img src="https://www.pstrstudio.com/cdn/shop/files/mockup_new_4_3193ec49-77d6-4b1d-91ea-189732a83660.jpg?v=1729057143&width=640" alt="Image 3">
-  <img src="https://theposterclub.com/wp-content/uploads/2024/03/Iga_Kosicka_Ping_Pong_Product_Low_Res.jpg" alt="Image 4">
-  <img src="https://www.pstrstudio.com/cdn/shop/files/mockup_new_4_3193ec49-77d6-4b1d-91ea-189732a83660.jpg?v=1729057143&width=640" alt="Image 5">
-  <img src="https://theposterclub.com/wp-content/uploads/2024/03/Iga_Kosicka_Ping_Pong_Product_Low_Res.jpg" alt="">
-</div>
-      <h2 class="overlay-text">we're getting married</h2>
+.image-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent images from wrapping */
+}
+
+.image-container img {
+  width: 300px; /* Adjust as needed */
+  height: auto;
+  margin: 10px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure text is on top */
+  color: white; /* Or any color you prefer */
+  font-size: 2em;
+  text-shadow: 2px 2px 4px #000000; /* Add a shadow for better visibility */
+}
+
+.hero {
+  background-color: #f0f0f0; /* Example background color */
+  padding: 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+}
+</style>
+</head>
+<body>
+  <div class="overlay">
+    <h1 class="names">Ella & Connor</h1>
+    <div class="image-container">
+      <img src="https://www.pstrstudio.com/cdn/shop/files/mockup_new_4_3193ec49-77d6-4b1d-91ea-189732a83660.jpg?v=1729057143&width=640" alt="Image 1">
+      <img src="https://theposterclub.com/wp-content/uploads/2024/03/Iga_Kosicka_Ping_Pong_Product_Low_Res.jpg" alt="Image 2">
+      <img src="https://www.pstrstudio.com/cdn/shop/files/mockup_new_4_3193ec49-77d6-4b1d-91ea-189732a83660.jpg?v=1729057143&width=640" alt="Image 3">
+      <img src="https://theposterclub.com/wp-content/uploads/2024/03/Iga_Kosicka_Ping_Pong_Product_Low_Res.jpg" alt="Image 4">
+      <img src="https://www.pstrstudio.com/cdn/shop/files/mockup_new_4_3193ec49-77d6-4b1d-91ea-189732a83660.jpg?v=1729057143&width=640" alt="Image 5">
+      <img src="https://theposterclub.com/wp-content/uploads/2024/03/Iga_Kosicka_Ping_Pong_Product_Low_Res.jpg" alt="">
+    </div>
+    <h2 class="overlay-text">We're getting married</h2>
+  </div>
 
   <header class="hero">
     <nav>
@@ -28,28 +78,9 @@
       </ul>
     </nav>
   </header>
-<p> Connor and ella invite you to their wedding<p>
-    <p><strong>ELLA DAMMAN-SMITH & CONNOR ANDREWS</strong></p>
-    <p>invite you to join them for their wedding</p>
-    <p><strong>on</strong></p>
-    <p>FRIDAY</p>
-    <p><strong>25.07.25</strong></p>
-    <p>&</p>
-    <p>SATURDAY</p>
-  </main><link rel="stylesheet" href="style.css" />
-</div>
 
-
-      <h2 class="overlay-text">we're getting married</h2>
-
-
-   
-<br>
-<br>
-<br>
-<br>
-
-<p> Connor and ella invite you to their wedding<p>
+  <main>
+    <p>Connor and Ella invite you to their wedding</p>
     <p><strong>ELLA DAMMAN-SMITH & CONNOR ANDREWS</strong></p>
     <p>invite you to join them for their wedding</p>
     <p><strong>on</strong></p>
@@ -58,3 +89,5 @@
     <p>&</p>
     <p>SATURDAY</p>
   </main>
+</body>
+</html>
