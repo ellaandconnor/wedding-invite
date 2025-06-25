@@ -19,13 +19,16 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
     margin: 0 1rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #c00;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 .hero {
