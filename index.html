@@ -1,12 +1,51 @@
+<link rel="stylesheet" href="style.css" />
+</div>
+
+<div class="overlay">
+      <h1 class="names">Ella & Connor</h1>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ella & Connor</title>
-  <link rel="stylesheet" href="style.css" />
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
+}
+
+.image-container img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+</style>
 </head>
 <body>
+
+<div class="image-container">
+  <img src="image1.jpg" alt="Image 1">
+  <img src="image2.jpg" alt="Image 2">
+  <img src="https://www.pstrstudio.com/cdn/shop/files/mockup_new_4_3193ec49-77d6-4b1d-91ea-189732a83660.jpg?v=1729057143&width=640" alt="Image 1">
+  <img src="https://theposterclub.com/wp-content/uploads/2024/03/Iga_Kosicka_Ping_Pong_Product_Low_Res.jpg" alt="Image 2">
+  <img src="image3.jpg" alt="Image 3">
+</div>
+
+
+      <h2 class="overlay-text">we're getting married</h2>
 
   <header class="hero">
     <nav>
@@ -18,14 +57,17 @@
         <li><a href="#">RSVP</a></li>
       </ul>
     </nav>
-
-    <div class="hero-content">
-      <h1 class="names">Ella & CONNOR</h1>
-      <h2 class="overlay-text">we're getting married</h2>
-    </div>
   </header>
-
   <main class="invitation">
+
+    <div class="image-container">
+  <img src="image1.jpg" alt="Image 1">
+  <img src="image2.jpg" alt="Image 2">
+  <img src="https://www.pstrstudio.com/cdn/shop/files/mockup_new_4_3193ec49-77d6-4b1d-91ea-189732a83660.jpg?v=1729057143&width=640" alt="Image 1">
+  <img src="https://theposterclub.com/wp-content/uploads/2024/03/Iga_Kosicka_Ping_Pong_Product_Low_Res.jpg" alt="Image 2">
+  <img src="image3.jpg" alt="Image 3">
+
+
     <p><strong>ELLA DAMMAN-SMITH & CONNOR ANDREWS</strong></p>
     <p>invite you to join them for their wedding</p>
     <p><strong>on</strong></p>
@@ -34,6 +76,3 @@
     <p>&</p>
     <p>SATURDAY</p>
   </main>
-
-</body>
-</html>
