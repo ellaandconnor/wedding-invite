@@ -1,95 +1,120 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Georgia', serif;
-  background-color: #fff;
-  text-align: center;
-  color: #000;
+    font-family: 'Beth Ellen', serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-/* Navigation */
-nav {
-  background-color: white;
-  padding: 1rem;
+header {
+    background-color: #fff;
+    padding: 1rem 0;
 }
 
-.nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  font-size: 1rem;
+nav li {
+    display: inline;
+    margin: 0 1rem;
 }
 
-/* Hero section */
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
 .hero {
-  position: relative;
-  background-image: url('your-photo.jpg'); /* Replace with your image */
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.names {
-  font-family: 'Beth Ellen', cursive;
-  font-size: 2.5rem;
-  color: #D63513;
-  margin-top: 1rem;
+.side-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
-.overlay-text {
-  font-family: 'Beth Ellen', cursive;
-  font-size: 3rem;
-  color: #D63513;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-/* Invitation */
-.invitation {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  padding: 1rem;
-}body {
-  margin: 0;
-  overflow: hidden;
+.side-images img {
+    width: 20%;
+    height: auto;
 }
 
 .image-container {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: scroll 15s linear infinite;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .image-container img {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 10px;
+    flex-shrink: 0;
 }
 
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #c00;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.order-of-service {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.order-of-service h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.order-of-service table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-of-service th,
+.order-of-service td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.wedding-details {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .side-images {
+        display: none;
+    }
+    .image-container img {
+        max-width: 100%;
+    }
+    nav ul {
+        text-align: left;
+    }
+    nav li {
+        display: block;
+        margin: 0.5rem 0;
+    }
 }
